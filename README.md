@@ -78,6 +78,7 @@ particle("우빈").name(조사.와_과); // 우빈이와
 particle("우빈").name(조사.을_를); // 우빈이를
 particle("우빈").name(조사.이_가); // 우빈이가
 particle("우빈").name(조사.이_랑); // 우빈이랑
+particle("우빈").name(조사.이_의); // 우빈이의
 
 particle("영희").name(조사.은_는); // 영희는
 particle("영희").name(조사.이_야); // 영희야
@@ -88,6 +89,7 @@ particle("영희").name(조사.와_과); // 영희와
 particle("영희").name(조사.을_를); // 영희를
 particle("영희").name(조사.이_가); // 영희가
 particle("영희").name(조사.이_랑); // 영희랑
+particle("영희").name(조사.이_의); // 영희의
 ```
 
 P.S. 내가 쓸라고 만듦 히히
