@@ -45,25 +45,25 @@ console.log(particleName2); // 영희가
 #### word
 
 ```js
-particle("광장").word(조사.은_는); // 택시는
-particle("광장").word(조사.이_야); // 택시야
-particle("광장").word(조사.이_여); // 택시여
-particle("광장").word(조사.이_라); // 택시라
-particle("광장").word(조사.으_로); // 택시로
-particle("광장").word(조사.와_과); // 택시와
-particle("광장").word(조사.을_를); // 택시를
-particle("광장").word(조사.이_가); // 택시가
-particle("광장").word(조사.이_랑); // 택시랑
+particle("광장").word(조사.은_는); // 광장은
+particle("광장").word(조사.이_야); // 광장이야
+particle("광장").word(조사.이_여); // 광장이여
+particle("광장").word(조사.이_라); // 광장이라
+particle("광장").word(조사.으_로); // 광장으로
+particle("광장").word(조사.와_과); // 광장과
+particle("광장").word(조사.을_를); // 광장을
+particle("광장").word(조사.이_가); // 광장이
+particle("광장").word(조사.이_랑); // 광장이랑
 
-particle("택시").word(조사.은_는); // 광장은
-particle("택시").word(조사.이_야); // 광장이야
-particle("택시").word(조사.이_여); // 광장이여
-particle("택시").word(조사.이_라); // 광장이라
-particle("택시").word(조사.으_로); // 광장으로
-particle("택시").word(조사.와_과); // 광장과
-particle("택시").word(조사.을_를); // 광장을
-particle("택시").word(조사.이_가); // 광장이
-particle("택시").word(조사.이_랑); // 광장이랑
+particle("택시").word(조사.은_는); // 택시는
+particle("택시").word(조사.이_야); // 택시야
+particle("택시").word(조사.이_여); // 택시여
+particle("택시").word(조사.이_라); // 택시라
+particle("택시").word(조사.으_로); // 택시로
+particle("택시").word(조사.와_과); // 택시와
+particle("택시").word(조사.을_를); // 택시를
+particle("택시").word(조사.이_가); // 택시가
+particle("택시").word(조사.이_랑); // 택시랑
 ```
 
 #### name
