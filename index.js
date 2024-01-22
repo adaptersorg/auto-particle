@@ -13,7 +13,8 @@ exports.조사 = {
     이_랑: "이_랑",
     이_의: "이_의",
     이_와: "이_와",
-    아_야: "아_야"
+    아_야: "아_야",
+    이: "이"
 };
 var isUnderlay = function (word) {
     if (typeof word !== "string")
@@ -75,6 +76,9 @@ var particleSwitch = function (keyword, state, isName) {
         case exports.조사.아_야:
             if (isName)
                 return isUnderlay(keyword) ? "".concat(keyword, "\uC544") : "".concat(keyword, "\uC57C");
+        case exports.조사.이:
+            if (isName)
+                return isUnderlay(keyword) ? "".concat(keyword, "\uC774") : keyword;
     }
 };
 var particle = function (keyword) {
