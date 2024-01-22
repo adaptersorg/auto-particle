@@ -22,6 +22,7 @@ const isUnderlay = (word: string) => {
 };
 
 const particleSwitch = (keyword: string, state: string, isName: boolean) => {
+  if (!keyword) return keyword;
   switch (state) {
     case 조사.은_는:
       if (isUnderlay(keyword))
@@ -67,7 +68,6 @@ const particleSwitch = (keyword: string, state: string, isName: boolean) => {
 };
 
 export const particle = (keyword: string) => {
-  if (!keyword) return keyword;
   const name = (state: string) => particleSwitch(keyword, state, true);
 
   const word = (state: string) => particleSwitch(keyword, state, false);

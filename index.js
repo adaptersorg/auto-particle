@@ -25,6 +25,8 @@ var isUnderlay = function (word) {
     return (uni - 44032) % 28 != 0;
 };
 var particleSwitch = function (keyword, state, isName) {
+    if (!keyword)
+        return keyword;
     switch (state) {
         case exports.조사.은_는:
             if (isUnderlay(keyword))
@@ -76,8 +78,6 @@ var particleSwitch = function (keyword, state, isName) {
     }
 };
 var particle = function (keyword) {
-    if (!keyword)
-        return keyword;
     var name = function (state) { return particleSwitch(keyword, state, true); };
     var word = function (state) { return particleSwitch(keyword, state, false); };
     return { name: name, word: word };
