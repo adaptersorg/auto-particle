@@ -10,7 +10,10 @@ exports.조사 = {
     와_과: "와_과",
     을_를: "을_를",
     이_가: "이_가",
-    이_랑: "이_랑"
+    이_랑: "이_랑",
+    이_의: "이_의",
+    이_와: "이_와",
+    아_야: "아_야"
 };
 var isUnderlay = function (word) {
     if (typeof word !== "string")
@@ -59,6 +62,17 @@ var particleSwitch = function (keyword, state, isName) {
             if (isUnderlay(keyword))
                 return "".concat(keyword, "\uC774\uB791");
             return "".concat(keyword, "\uB791");
+        case exports.조사.이_의:
+            if (isUnderlay(keyword) && isName)
+                return "".concat(keyword, "\uC774\uC758");
+            return "".concat(keyword, "\uC758");
+        case exports.조사.이_와:
+            if (isUnderlay(keyword) && isName)
+                return "".concat(keyword, "\uC774\uC640");
+            return "".concat(keyword, "\uC758");
+        case exports.조사.아_야:
+            if (isName)
+                return isUnderlay(keyword) ? "".concat(keyword, "\uC544") : "".concat(keyword, "\uC57C");
     }
 };
 var particle = function (keyword) {

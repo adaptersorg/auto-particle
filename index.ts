@@ -9,6 +9,8 @@ export const 조사 = {
   이_가: "이_가",
   이_랑: "이_랑",
   이_의: "이_의",
+  이_와: "이_와",
+  아_야: "아_야",
 } as const;
 
 const isUnderlay = (word: string) => {
@@ -56,6 +58,11 @@ const particleSwitch = (keyword: string, state: string, isName: boolean) => {
     case 조사.이_의:
       if (isUnderlay(keyword) && isName) return `${keyword}이의`;
       return `${keyword}의`;
+    case 조사.이_와:
+      if (isUnderlay(keyword) && isName) return `${keyword}이와`;
+      return `${keyword}의`;
+    case 조사.아_야:
+      if (isName) return isUnderlay(keyword) ? `${keyword}아` : `${keyword}야`;
   }
 };
 
