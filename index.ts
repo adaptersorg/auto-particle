@@ -67,6 +67,7 @@ const particleSwitch = (keyword: string, state: string, isName: boolean) => {
 };
 
 export const particle = (keyword: string) => {
+  if (!keyword) return keyword;
   const name = (state: string) => particleSwitch(keyword, state, true);
 
   const word = (state: string) => particleSwitch(keyword, state, false);

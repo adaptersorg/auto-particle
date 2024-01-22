@@ -76,6 +76,8 @@ var particleSwitch = function (keyword, state, isName) {
     }
 };
 var particle = function (keyword) {
+    if (!keyword)
+        return keyword;
     var name = function (state) { return particleSwitch(keyword, state, true); };
     var word = function (state) { return particleSwitch(keyword, state, false); };
     return { name: name, word: word };
